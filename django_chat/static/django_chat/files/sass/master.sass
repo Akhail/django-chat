@@ -1,0 +1,61 @@
+@import 'compass/reset'
+@import 'compass/css3'
+
+div.chat-window
+    background-color: #eeeeee
+    padding:
+        left: 40px
+        right: 40px
+    max-height: 400px
+    overflow-y: scroll
+    +box-shadow(inset 0 0 2px #333333)
+
+div.message
+    margin:
+        top: 30px
+        bottom: 30px
+    position: relative
+    border: 1px solid #999
+    +border-radius(5px)
+    padding:
+        top: 25px
+        bottom: 10px
+        right: 10px
+        left: 10px
+    
+        
+    > div.message-top
+        position: absolute
+        top: 2px
+        right: 20px
+        > h3, span
+            color: #333
+            font-size: 0.8em
+            display: inline
+        > span:before
+            content: ' - '
+            color: #333
+            
+section
+    margin:
+        top: 40px
+        bottom: 80px
+        left: auto
+        right: auto
+    max-width: 1366px
+    width: 80%
+    *
+        +box-sizing(border-box)
+
+div.message-inputs
+    margin-top: 10px
+    overflow: hidden
+    > input[type='text']
+        float: left
+        border: 1px solid #999
+        padding: 7px
+        text-align: right
+        width: 75%
+        &:first-child
+            width: 25%
+        

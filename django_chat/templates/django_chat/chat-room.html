@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Chat Room{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'django_chat/files/css/master.css' %}">
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'django_chat/files/js/jquery.js' %}"></script>
+    <script src="{% static 'django_chat/files/js/master.js' %}"></script>
+{% endblock %}
+
+{% block body %}
+    <section>
+        <div class="chat-window">
+
+        </div>
+        <div class="message-inputs">
+            <input id="author" type="text" title="Nombre Usuario" placeholder="Anónimo">
+            <input id="content" type="text" title="Message" placeholder="Hola mundo">
+        </div>
+    </section>
+    <footer></footer>
+{% endblock %}

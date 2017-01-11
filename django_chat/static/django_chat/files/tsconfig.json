@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "outDir": "js"
+  },
+  "compileOnSave": true,
+  "files": [
+    "ts/master"
+  ]
+}
